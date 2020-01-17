@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf r4e r4e.zip
+cp -r template r4e
+python generate.py
+cd r4e && zip -r -0 ../r4e *
