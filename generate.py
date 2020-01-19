@@ -40,6 +40,7 @@ def commandTeams(teams):
         string += "team add " + teamname + "\n"
         for player in teams[i]:
             string += "team join " + teamname + " " + player + "\n" 
+            string += "whitelist add " + player + "\n"
     return string
 
 def commandSpread(coords):
